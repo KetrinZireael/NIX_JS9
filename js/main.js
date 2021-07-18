@@ -1,17 +1,23 @@
-// function array(myArray) {
-//    let newArray = [];
-//    let sum = 0;
-   
-//    for(i = 0; i < myArray.lenght; i++) {
-//         newArray.push(myArray[i] + sum);
-//         console.log(newArray);
-//    } 
-// }
-
 let myArray = [1,2,3,4];
-let sum = 0;
+let sum = 1;
 
 for (i = 0; i < myArray.length; i++) {
-   sum += myArray[i] ;
-   console.log(sum);
+   sum *= myArray[i];
 }
+console.log(sum);
+
+
+function array(newArray) {
+   let newSum = 1;
+   
+   for(i = 0; i < newArray.length; i++) {
+      newSum *= newArray[i];
+   }
+   console.log(newSum);
+}
+
+array([5,4,6,7]);
+
+
+
+
